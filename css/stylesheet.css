@@ -1,0 +1,391 @@
+/*common values start*/
+@font-face {
+  font-family: "MaisonBook";
+  font-display: swap;
+  src: url("//cdn.shopify.com/s/files/1/0167/4484/t/55/assets/MaisonNeue-Book.woff2?v=13869110199743094541673198003") format("woff2"), url("//cdn.shopify.com/s/files/1/0167/4484/t/55/assets/MaisonNeue-Book.woff?v=7825177479420942711673198003") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.dis-flex {
+  display: flex;
+  align-items: center;
+}
+
+.img-wrp img {
+  width: 100%;
+}
+
+.heading-01 {
+  font-size: 40px;
+  color: #363535;
+  font-family: "maisonbook";
+}
+.heading-01.box-heading {
+  font-size: 50px;
+}
+
+.para-logo-white {
+  font-size: 55px;
+  padding-right: 4vw;
+  color: #ffffff;
+  font-family: "maisonbook";
+  letter-spacing: 8px;
+}
+
+.para-01 {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "maisonbook";
+}
+.para-01.learn-more {
+  padding-bottom: 5px;
+}
+.para-01.black {
+  color: #363535;
+}
+
+header {
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+header .icon {
+  filter: brightness(10);
+  width: 4%;
+}
+header.inverted {
+  background-color: #363535;
+}
+
+.para-02 {
+  color: #ffffff;
+  font-family: "maisonbook";
+  letter-spacing: 1px;
+}
+.para-02.navbar {
+  color: #cdcdcd;
+  text-decoration: none;
+  margin-right: 2vw;
+}
+.para-02.navbar.black {
+  color: #363535;
+}
+.para-02.collection-text {
+  color: #363535;
+}
+.para-02.grey {
+  color: #cdcdcd;
+}
+
+.para-03 {
+  font-family: "maisonbook";
+}
+.para-03.black {
+  color: #363535;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ffffff;
+}
+.border-bottom.bdr-black {
+  border-bottom: 1px solid #363535;
+}
+
+.section-padding {
+  padding: 8vw;
+}
+
+.padding-header {
+  padding: 50px 0;
+}
+
+.header-nav-padding {
+  padding-right: 40px;
+}
+
+.backstory-padding {
+  padding: 8vw 6vw;
+}
+
+.vid-padding {
+  padding-top: 4vw;
+}
+
+.mc-01 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mc-02 {
+  margin-bottom: 20px;
+}
+
+.font-01 {
+  font-size: 22px;
+}
+
+.font-02 {
+  font-size: 20px;
+}
+
+.font-03 {
+  font-size: 25px;
+}
+
+.textalign-left {
+  text-align: left;
+}
+
+.textalign-center {
+  text-align: center;
+}
+
+.textalign-right {
+  text-align: right;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #363535;
+}
+
+.grey {
+  color: #cdcdcd;
+}
+
+.button {
+  background-color: #363535;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 100px;
+}
+.button.another-btn {
+  padding: 15px 60px;
+}
+
+/*common values end*/
+.ugmonk-homepage header .container .navigations {
+  justify-content: space-between;
+}
+.ugmonk-homepage header .container .navigations .nav-wrp-02 {
+  width: 50%;
+  justify-content: flex-end;
+}
+.ugmonk-homepage .banner {
+  position: relative;
+}
+.ugmonk-homepage .banner .banner-img {
+  filter: drop-shadow(10px -60px 40px #936f57);
+}
+.ugmonk-homepage .banner .content-wrp {
+  position: absolute;
+  bottom: 9vw;
+  left: 5vw;
+}
+.ugmonk-homepage .banner .content-wrp .container {
+  position: relative;
+}
+.ugmonk-homepage .banner .content-wrp .container::before {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 0px 0px 0px 2px;
+  display: inline-block;
+  padding: 6px 0px;
+  transform: rotate(90deg) translateX(7px);
+  left: 110px;
+  bottom: 12px;
+}
+.ugmonk-homepage .banner .content-wrp .container::after {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 2px 0px 0px 2px;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(135deg) translateX(17px);
+  left: 125px;
+  bottom: 20px;
+}
+.ugmonk-homepage .collection .container .navbar-03 {
+  padding: 50px 0;
+}
+.ugmonk-homepage .collection .container .dis-flex {
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.ugmonk-homepage .collection .container .dis-flex .dis-extrnl-pddng {
+  width: 25%;
+}
+.ugmonk-homepage .collection .container .dis-flex .dis-extrnl-pddng .hover-change {
+  position: relative;
+}
+.ugmonk-homepage .collection .container .dis-flex .dis-extrnl-pddng .hover-change .hover-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 90%;
+  margin: auto;
+}
+.ugmonk-homepage .collection .container .dis-flex .dis-extrnl-pddng .hover-change:hover .hover-img {
+  opacity: 1;
+}
+.ugmonk-homepage .collection .container .dis-flex .dis-extrnl-pddng .img-wrp {
+  width: 90%;
+  margin: auto;
+}
+.ugmonk-homepage .collection .container .dis-flex .dis-extrnl-pddng .tees-info {
+  width: 90%;
+  margin: auto;
+}
+.ugmonk-homepage .collection .container .btn {
+  padding-top: 6vw;
+  padding-bottom: 12vw;
+}
+.ugmonk-homepage .collection .container .btn .button {
+  position: relative;
+}
+.ugmonk-homepage .collection .container .btn .button::before {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 2px 0px 0px 2px;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(135deg) translateX(19px);
+  right: 48px;
+}
+.ugmonk-homepage .collection .container .btn .button::after {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 0px 0px 0px 2px;
+  display: inline-block;
+  padding: 10px 0px;
+  transform: rotate(90deg) translateX(8px);
+  right: 70px;
+}
+.ugmonk-homepage .backstory {
+  background-color: #f7f6f2;
+}
+.ugmonk-homepage .backstory .container .heading-wrp .black {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 4vw;
+}
+.ugmonk-homepage .backstory .container .heading-wrp .btn .button {
+  position: relative;
+}
+.ugmonk-homepage .backstory .container .heading-wrp .btn .button::before {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 0px 0px 0px 2px;
+  display: inline-block;
+  padding: 8px 0px;
+  transform: rotate(90deg) translateX(7px);
+  right: 40px;
+  bottom: 25px;
+}
+.ugmonk-homepage .backstory .container .heading-wrp .btn .button::after {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 2px 0px 0px 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg) translateX(17px);
+  right: 21px;
+  bottom: 34px;
+}
+.ugmonk-homepage .backstory .container .video-content {
+  filter: brightness(0.8);
+}
+.ugmonk-homepage .backstory .container .video-content .vid {
+  position: relative;
+}
+.ugmonk-homepage .backstory .container .video-content .vid::before {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 7.5vw 0px 0px 8vw;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 8px 0px;
+  transform: rotate(90deg) translateX(8px);
+  bottom: 15vw;
+  left: 37vw;
+}
+.ugmonk-homepage .backstory .container .video-content .vid::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #363535;
+  bottom: 17.7vw;
+  right: 41.2vw;
+}
+.ugmonk-homepage .speaker {
+  background: #ced4ca;
+  padding: 8vw;
+}
+.ugmonk-homepage .speaker .speaker-wrp {
+  width: 100%;
+  justify-content: center;
+}
+.ugmonk-homepage .speaker .speaker-wrp .white-box {
+  background: #fff;
+  padding: 6.6vw 7vw;
+  width: 35%;
+}
+.ugmonk-homepage .speaker .speaker-wrp .white-box .heading-01 {
+  padding-bottom: 40px;
+}
+.ugmonk-homepage .speaker .speaker-wrp .white-box .para-01 {
+  position: relative;
+}
+.ugmonk-homepage .speaker .speaker-wrp .white-box .para-01::before {
+  content: "";
+  position: absolute;
+  border: solid #363535;
+  border-width: 2px 0px 0px 2px;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(135deg) translateX(19px);
+}
+.ugmonk-homepage .speaker .speaker-wrp .white-box .para-01::after {
+  content: "";
+  position: absolute;
+  border: solid #363535;
+  border-width: 0px 0px 0px 2px;
+  display: inline-block;
+  padding: 10px 0px;
+  transform: rotate(90deg) translateX(8px);
+}
+.ugmonk-homepage .speaker .speaker-wrp .img-wrp {
+  width: 64.5%;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

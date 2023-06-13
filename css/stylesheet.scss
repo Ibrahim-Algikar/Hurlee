@@ -1,0 +1,418 @@
+/*common values start*/
+@font-face {
+    font-family: 'MaisonBook';
+    font-display: swap;
+    src:
+      url("//cdn.shopify.com/s/files/1/0167/4484/t/55/assets/MaisonNeue-Book.woff2?v=13869110199743094541673198003") format('woff2'),
+      url("//cdn.shopify.com/s/files/1/0167/4484/t/55/assets/MaisonNeue-Book.woff?v=7825177479420942711673198003") format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1600px;
+    margin: auto;
+}
+.dis-flex {
+    display: flex;
+    align-items: center;
+}
+.img-wrp {
+    img {
+        width: 100%;
+    }
+}
+// cmmn para start
+// heading start
+.heading-01 {
+    font-size: 40px;
+    color: #363535;
+    font-family: 'maisonbook';
+    &.box-heading {
+        font-size: 50px;
+    }
+}
+// heading end
+.para-logo-white {
+    font-size: 55px;
+    padding-right: 4vw;
+    color: #ffffff;
+    font-family: 'maisonbook';
+    letter-spacing: 8px;
+}
+.para-01 {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'maisonbook';
+    &.learn-more {
+        padding-bottom: 5px;
+    }
+    &.black {
+        color: #363535;
+    }
+}
+header {
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    .icon {
+        filter: brightness(10);
+        width: 4%;
+    }
+    &.inverted {
+        background-color: #363535;
+    }
+    
+}
+.para-02 {
+    color: #ffffff;
+    font-family: 'maisonbook';
+    letter-spacing: 1px;
+    &.navbar {
+        color: #cdcdcd;
+        text-decoration: none;
+        margin-right: 2vw;
+        &.black {
+            color: #363535;
+        }
+    }
+    &.collection-text {
+        color: #363535;
+    }
+    &.grey {
+        color: #cdcdcd;
+    }
+}
+.para-03 {
+    font-family: 'maisonbook';
+    &.black {
+        color: #363535;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+// cmmn para end
+.border-bottom {
+    border-bottom: 1px solid #ffffff;
+    &.bdr-black {
+        border-bottom: 1px solid #363535;
+    }
+}
+// padding collection start
+.section-padding {
+    padding: 8vw;
+}
+.padding-header {
+    padding: 50px 0;
+}
+.header-nav-padding {
+    padding-right: 40px;
+}
+.backstory-padding {
+    padding: 8vw 6vw;
+}
+.vid-padding {
+    padding-top: 4vw;
+}
+// padding collection end
+// margin collection start
+.mc-01 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mc-02 {
+    margin-bottom: 20px;
+}
+// margin collection end
+// font collection start
+.font-01 {
+    font-size: 22px;
+}
+.font-02 {
+    font-size: 20px;
+}
+.font-03 {
+    font-size: 25px;
+}
+
+// font collection end
+// textalign start
+.textalign-left {
+    text-align: left;
+}
+.textalign-center {
+    text-align: center;
+}
+.textalign-right {
+    text-align: right;
+}
+// textalign end
+// color start
+// colors start
+.white {
+    color: #ffffff;
+}
+.black {
+    color: #363535;
+}
+.grey {
+    color: #cdcdcd;
+}
+// colors end
+// buttons start
+.button {
+    background-color: #363535;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 100px;
+    &.another-btn {
+        padding: 15px 60px;
+    }
+}
+// buttons end
+/*common values end*/
+// ugmonk-homepage start
+.ugmonk-homepage {
+    // header start
+    header {
+        // position: fixed;
+        // width: 100%;
+        // z-index: 1;
+        // background: linear-gradient(100deg, rgba(200,158,133,1) 0%, rgba(207,165,140,1) 25%, rgba(203,162,137,1) 50%, rgba(197,153,129,1) 75%);
+        .container {
+            .navigations {
+                justify-content: space-between;
+                .nav-wrp-02 {
+                    width: 50%;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    // header end
+    // banner start
+    .banner {
+        position: relative;
+        .banner-img {
+            filter: drop-shadow(10px -60px 40px #936f57);
+        }
+        .content-wrp {
+            position: absolute;
+            bottom: 9vw;
+            left: 5vw;
+            .container {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border: solid #fff;
+                    border-width: 0px 0px 0px 2px;
+                    display: inline-block;
+                    padding: 6px 0px;
+                    transform: rotate(90deg) translateX(7px);
+                    left: 110px;
+                    bottom: 12px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border: solid #fff;
+                    border-width: 2px 0px 0px 2px;
+                    display: inline-block;
+                    padding: 2px;
+                    transform: rotate(135deg) translateX(17px);
+                    left: 125px;
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+    // banner end
+    // collection start
+    .collection {
+        .container {
+            .navbar-03 {
+                padding: 50px 0;
+            }
+            .dis-flex {
+                flex-wrap: wrap;
+                align-items: baseline;
+                .dis-extrnl-pddng {
+                    width: 25%;
+                    .hover-change {
+                        position: relative;
+                        .hover-img {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            object-fit: contain;
+                            opacity: 0;
+                            transition: opacity 0.3s;
+                            width: 90%;
+                            margin: auto;
+                        }
+                    }
+                    .hover-change:hover {
+                        .hover-img {
+                            opacity: 1;
+                        }
+                    }
+                    .img-wrp {
+                        width: 90%;
+                        margin: auto;
+                    }
+                    .tees-info {
+                        width: 90%;
+                        margin: auto;
+                    }
+                }
+            }
+            .btn {
+                padding-top: 6vw;
+                padding-bottom: 12vw;
+                .button {
+                    position: relative;
+                }
+                .button::before {
+                    content: "";
+                    position: absolute;
+                    border: solid #fff;
+                    border-width: 2px 0px 0px 2px;
+                    display: inline-block;
+                    padding: 4px;
+                    transform: rotate(135deg) translateX(19px);
+                    right: 48px;
+                }
+                .button::after {
+                    content: "";
+                    position: absolute;
+                    border: solid #fff;
+                    border-width: 0px 0px 0px 2px;
+                    display: inline-block;
+                    padding: 10px 0px;
+                    transform: rotate(90deg) translateX(8px);
+                    right: 70px;
+                }
+            }
+        }
+    }
+    // collection end
+    // backstory start
+    .backstory {
+        background-color: #f7f6f2;
+        .container {
+            .heading-wrp {
+                .black {
+                    width: 50%;
+                    margin: auto;
+                    padding-bottom: 4vw;
+                }
+                .btn {
+                    .button {
+                        position: relative;
+                    }
+                    .button::before {
+                        content: "";
+                        position: absolute;
+                        border: solid #fff;
+                        border-width: 0px 0px 0px 2px;
+                        display: inline-block;
+                        padding: 8px 0px;
+                        transform: rotate(90deg) translateX(7px);
+                        right: 40px;
+                        bottom: 25px;
+                    }
+                    .button::after {
+                        content: "";
+                        position: absolute;
+                        border: solid #fff;
+                        border-width: 2px 0px 0px 2px;
+                        display: inline-block;
+                        padding: 3px;
+                        transform: rotate(135deg) translateX(17px);
+                        right: 21px;
+                        bottom: 34px;
+                    }
+                }
+            }
+            .video-content {
+                filter: brightness(0.8);
+                .vid {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border: solid #fff;
+                        border-width: 7.5vw 0px 0px 8vw;
+                        border-radius: 50%;
+                        display: inline-block;
+                        padding: 8px 0px;
+                        transform: rotate(90deg) translateX(8px);
+                        bottom: 15vw;
+                        left: 37vw;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 0px;
+                        height: 0px;
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent;
+                        border-left: 30px solid #363535;
+                        bottom: 17.7vw;
+                        right: 41.2vw;
+                    }
+                }
+            }
+        }
+    }
+    // backstory end
+    // speaker start
+    .speaker {
+        background: #ced4ca;
+        padding: 8vw;
+        .speaker-wrp {
+            width: 100%;
+            justify-content: center;
+            .white-box {
+                background: #fff;
+                padding: 6.6vw 7vw;
+                width: 35%;
+                .heading-01 {
+                    padding-bottom: 40px;
+                }
+                .para-01 {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border: solid #363535;
+                        border-width: 2px 0px 0px 2px;
+                        display: inline-block;
+                        padding: 4px;
+                        transform: rotate(135deg) translateX(19px);
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border: solid #363535;
+                        border-width: 0px 0px 0px 2px;
+                        display: inline-block;
+                        padding: 10px 0px;
+                        transform: rotate(90deg) translateX(8px);
+                    }
+                }
+            }
+            .img-wrp {
+                width: 64.5%;
+            }
+        }
+    }
+    // speaker end
+}
+// .ugmonk-homepage end
